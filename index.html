@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End Test</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -14,8 +15,19 @@
         <h3>Please complete the below information to begin your onboarding process.</h3>
     </header>
     <div id="input-section">
-        <form>
-            
+        <form id="onboarding-form" class="form-inputs" onsubmit="return false">
+            <label for="country">Country of work:</label>
+            <input type="text" id="country" maxlength="50" placeholder="*Country of work" class="process-input-fields">
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" maxlength="50" placeholder="*First name" class="process-input-fields">
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" maxlength="50" placeholder="*Last name" class="process-input-fields">
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="text" id="date-of-birth" maxlength="20" placeholder="ex: 01 Jan 2000"
+                class="process-input-fields">
+            <label for="holiday-allowance">Holiday allowance:</label>
+            <input type="text" id="holiday-allowance" maxlength="20" placeholder="Holiday allowance"
+                class="process-input-fields">
         </form>
     </div>
 
