@@ -2,3 +2,17 @@ body {
     background-color: lightgoldenrodyellow;
     color: darkblue;
 }
+
+#onboarding-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+input {
+    width: 300px;
+}
+
+.spain-field {
+    visibility: hidden;
+}
