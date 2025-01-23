@@ -25,11 +25,11 @@ let person = {
     workingHours: ""
 }
 
-//This function checks the country and toggles the hidden class on or off
-//depending on the country entered. Inputs are identified by their class
-//and there is a class used for each country that requires unique firlds.
-//The country input checks continuously as anything is being typed
-//so it is able to update immediately as someone types.
+/* This function checks the country and toggles the hidden class on or off
+ depending on the country entered. Inputs are identified by their class
+ and there is a class used for each country that requires unique firlds.
+ The country input checks continuously as anything is being typed
+ so it is able to update immediately as someone types. */
 function countryVisibility() {
     if (country.value == "Spain") {
         for (let i = 0; i < spainFields.length; i++) {
@@ -54,8 +54,8 @@ function countryVisibility() {
     }
 }
 
-// This function collects the values of all the fields and combines 
-// them into an object before converting that object into a JSON
+/* This function collects the values of all the fields and combines 
+ them into an object before converting that object into a JSON */
 function sendInformation() {
     person.country = country.value;
     person.firstName = firstName.value;
