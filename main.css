@@ -13,13 +13,17 @@ input {
     width: 300px;
 }
 
-#marital-status-container, #social-insurance-number-container, #number-of-children-container, #working-hours-container {
+.single-input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* flex-direction: column; */
 }
 
 .hidden {
-    /* visibility: hidden; */
+    visibility: hidden;
+}
+
+.button {
+    margin-top: 10px;
+    width: 100px;
 }

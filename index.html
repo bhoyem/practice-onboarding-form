@@ -15,39 +15,36 @@
         <h3>Please complete the below information to begin your onboarding process:</h3>
     </header>
     <div id="input-section">
-        <form id="onboarding-form" class="form-inputs" onsubmit="return false">
+        <form id="onboarding-form" class="form-inputs" onsubmit="return sendInformation()">
             <label for="country">Country of work:</label>
-            <input type="text" id="country" maxlength="50" placeholder="*Country of work" class="process-input-fields">
+            <input type="text" id="country" maxlength="50" oninput="countryVisibility()" placeholder="*Country of work"
+                class="process-input-fields" required>
             <label for="first-name">First name:</label>
-            <input type="text" id="first-name" maxlength="50" placeholder="*First name" class="process-input-fields">
+            <input type="text" id="first-name" maxlength="50" placeholder="*First name" class="process-input-fields"
+                required>
             <label for="last-name">Last name:</label>
-            <input type="text" id="last-name" maxlength="50" placeholder="*Last name" class="process-input-fields">
+            <input type="text" id="last-name" maxlength="50" placeholder="*Last name" class="process-input-fields"
+                required>
             <label for="date-of-birth">Date of Birth:</label>
             <input type="text" id="date-of-birth" maxlength="20" placeholder="*ex: 01 Jan 2000"
-                class="process-input-fields">
+                class="process-input-fields" required>
             <label for="holiday-allowance">Holiday allowance:</label>
             <input type="text" id="holiday-allowance" maxlength="20" placeholder="*Holiday allowance"
-                class="process-input-fields">
-            <div id="marital-status-container" class="single-input">
-                <label for="marital-status">Marital status:</label>
-                <input type="text" id="marital-status" maxlength="20" placeholder="*Marital status"
-                    class="process-input-fields">
-            </div>
-            <div id="social-insurance-number-container">
-                <label for="social-insurance-number" class="spain-field">Social insurance number:</label>
-                <input type="text" id="social-insurance-number" maxlength="20" placeholder="*Social insurance number"
-                    class="process-input-fields" class="spain-field">
-            </div>
-            <div id="number-of-children-container">
-                <label for="number-of-children" class="ghana-field">Number of children:</label>
-                <input type="text" id="number-of-children" maxlength="20" placeholder="*Number of children"
-                    class="process-input-fields" class="ghana-field">
-            </div>
-            <div id="working-hours-container">
-                <label for="working-hours">Working hours:</label>
-                <input type="text" id="working-hours" maxlength="20" placeholder="*Working hours"
-                    class="process-input-fields">
-            </div>
+                class="process-input-fields" required>
+            <label for="marital-status" class="spain-field ghana-field selective-field hidden">Marital status:</label>
+            <input type="text" id="marital-status" maxlength="20" placeholder="*Marital status"
+                class="process-input-fields spain-field ghana-field selective-field hidden">
+            <label for="social-insurance-number" class="spain-field selective-field hidden">Social insurance
+                number:</label>
+            <input type="text" id="social-insurance-number" maxlength="20" placeholder="*Social insurance number"
+                class="process-input-fields spain-field selective-field hidden">
+            <label for="number-of-children" class="ghana-field selective-field hidden">Number of children:</label>
+            <input type="text" id="number-of-children" maxlength="20" placeholder="*Number of children"
+                class="process-input-fields ghana-field selective-field hidden">
+            <label for="working-hours" class="brazil-field selective-field hidden">Working hours:</label>
+            <input type="text" id="working-hours" maxlength="20" placeholder="*Working hours"
+                class="process-input-fields brazil-field selective-field hidden">
+            <input type="submit" class="button" value="Submit" >
         </form>
     </div>
 
